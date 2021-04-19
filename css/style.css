@@ -1,0 +1,31 @@
+body {font-family: montseratt, sans-serif;
+	font-size: 16px;}
+*, *:before,*:after {box-sizing: border-box; margin: 0; padding: 0;}
+ul, li {display: block;
+		padding: 0;
+		margin: 0;}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+.container { width:100%; 
+			max-width:1140px;
+			margin: 0 auto;}
+
+
+/* Шрифт  font-family: 'Lato', sans-serif; */
+
+/* Стили шапки */
+header {padding: 30px 0px;
+		background-color: #f6f9f9;}
+
+.logo_container {margin: 0 25px;}
+
+/* Стили Intro */
+
+.intro {padding: 215px 0 90px 0;
+		background: url(../assets/background.jpg) no-repeat center;
+				background-size: cover;}
+
+h1 {font-size: 120px;
+	font-family: 'Lato', sans-serif;}
