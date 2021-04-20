@@ -124,7 +124,9 @@ header {padding: 30px 0px;
 
 .upper {margin-bottom: 30px;}
 
-.cases_image {object-fit: cover;}
+.cases_image {object-fit: cover;
+				width: 100%;
+				height: 100%;}
 
 .image_hover {width: 100%;
 			height: 100%;
@@ -133,10 +135,12 @@ header {padding: 30px 0px;
 			left: 0;
 			top:0;
 			opacity: 0;
-			transition:opacity 0.5s linear;
+			display: none;
+			transition: opacity 0.5s linear;
 			padding: 109px 0;}
 
-.image_hover:hover {opacity: 0.9;}
+.cases_item:hover .image_hover {display: block;
+								opacity: 0.9;}
 
 
 .links_block {display: block;
@@ -177,8 +181,7 @@ header {padding: 30px 0px;
 .cancel_preview {position: absolute;
 				top:-20px;
 				right:20px;
-				background: url(../assets/cancel.png) no-repeat center;
-				background-size: cover;
+				background: url(../assets/cancel.png) center;
 				z-index: 4;
 				width: 40px;
 				height: 40px;
@@ -306,3 +309,40 @@ footer {background: #f6f9f9;
 .facebook:hover {background:url(../assets/Normal_facebook.png);}
 
 
+/*Адаптивность*/
+
+@media screen and (max-width: 1175px) {
+	.container {width: 100%;
+				padding:0 15px;}
+
+
+	.right, .central, .left {float: none;
+			display: block;
+			width: 100%;
+			height:260px;}
+	.left, .central {margin-bottom: 30px;}
+.cases_item {width: 40%;}
+.upper {margin-bottom: 0;}
+.lf {margin-right: 30px;}
+}
+
+@media screen and (max-width: 768px) {
+
+.cases_item {display: block;
+			width: 55%;
+			margin: 0 auto;
+			margin-bottom: 30px;
+			overflow: hidden;}
+.cases {padding-bottom: 50px;}
+
+.section_headding {padding: 0 0 40px 0;}
+
+.right, .central, .left {height: auto; margin: 0 auto;}
+ .image_hover {padding: 85px 0;}
+.links_block { width: 80%;
+ }
+.link {width: 50%;
+		height: 100%;}
+.link_img {width:90px;
+			height: 90px;}
+}
