@@ -378,7 +378,9 @@ footer {background: #f6f9f9;
 										margin: 0 auto;
 										height: auto;
 										text-align: center;}
-	.footer_icon_block
+	.link_zoom {display: none;}
+	.link_go {margin: 0 auto;
+				width: 100%;}
 }
 
 @media screen and (min-width:280px) and (max-width:362px) {
