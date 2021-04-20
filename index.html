@@ -8,13 +8,28 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+<script>
+    $(document).ready(function(){
+        //Скрыть PopUp при загрузке страницы    
+        PopUpHide();
+    });
+    //Функция отображения PopUp
+    function PopUpShow(){
+        $("#popup1").show();
+    }
+    //Функция скрытия PopUp
+    function PopUpHide(){
+        $("#popup1").hide();
+    }
+</script>
 	<title>Strict Landing</title>
 </head>
 <body>
 	<header id="header">
 			<div class="container">
 				<div class="logo_container">	
-					<img src="assets/Logo.png" class="Logo_source" alt="Website logo">
+					<a target="_blank" href="https://www.behance.net/gallery/19066123/Strict-Portfolio-Template-Freebie"><img src="assets/Logo.png" class="Logo_source" alt="Website logo"></a>
 				</div>
 			</div>
 	</header>
@@ -25,7 +40,7 @@
 					<h1> Strict </h1>
 					<hr>
 					<p> <span>STRICT</span> is a responsive theme with a clean and minimal look. </p>
-					<a href="#"> <button class="cta_button"> Call to action </button>  </a>
+					<a href="#contact"> <button class="cta_button"> Call to action </button>  </a>
 					<div class="arrow"></div>
 				</div>
 			</div>
@@ -69,104 +84,120 @@
 		</section>
 
 		<section class="cases section">
-			<div class="container">			
-				<div class="section_headding heading_content"> 
-					<h2> Showcase your work like a pro. </h2>
-					<p> Contact me if you like my work </p>
-				</div>
-				<div class="cases_block">
-					<div class="cases_column left">
-						<div class="cases_item upper">
-							<img src="assets/Velo.jpg" class="cases_image">
-							<div class="image_hover">
-								<div class="links_block">
-									<div class="link_zoom link">
-										<img src="assets/Zoom.png" alt="Zoom image">
-									</div>
-									<div class="link_go link" alt="Link image">
-										<a href="#"></a><img src="assets/Link.png" alt="Link image"></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="cases_item">
-							<img src="assets/Green_cup.jpg" class="cases_image">
-							<div class="image_hover">
-								<div class="links_block">
-									<div class="link_zoom link">
-										<img src="assets/Zoom.png" alt="Zoom image">
-									</div>
-									<div class="link_go link" alt="Link image">
-										<a href="#"></a><img src="assets/Link.png" alt="Link image"></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-					</div>
 
-					<div class="cases_column">
-						<div class="cases_item upper">
-							<img src="assets/Girl.jpg" class="cases_image">
-							<div class="image_hover">
-								<div class="links_block">
-									<div class="link_zoom link">
-										<img src="assets/Zoom.png" alt="Zoom image">
-									</div>
-									<div class="link_go link" alt="Link image">
-										<a href="#"></a><img src="assets/Link.png" alt="Link image"></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="cases_item">
-							<img src="assets/Red_velo.jpg" class="cases_image">
-							<div class="image_hover">
-								<div class="links_block">
-									<div class="link_zoom link">
-										<img src="assets/Zoom.png" alt="Zoom image">
-									</div>
-									<div class="link_go link" alt="Link image">
-										<a href="#"></a><img src="assets/Link.png" alt="Link image"></a>
-									</div>
-								</div>
-							</div>
-						</div>
+				<div class="container">
+					
+					<div class="section_headding heading_content"> 
+						<h2> Showcase your work like a pro. </h2>
+						<p> Contact me if you like my work </p>
 					</div>
-					<div class="cases_column right">
-						<div class="cases_item upper">
-							<img src="assets/Green_cup.jpg" class="cases_image">
-							<div class="image_hover">
-								<div class="links_block">
-									<div class="link_zoom link">
-										<img src="assets/Zoom.png" alt="Zoom image">
+					<div class="cases_block">
+						<div class="cases_column left">
+							<div class="cases_item upper">
+								<img src="assets/Velo.jpg" class="cases_image">
+								<div class="image_hover">
+							
+									<div class="links_block">
+										<div class="link_zoom link">
+											<a href="javascript:PopUpShow()"><img src="assets/Zoom.png" alt="Zoom image"></a>
+										</div>
+										<div class="link_go link" alt="Link image">
+											<a href="#"></a><img src="assets/Link.png" alt="Link image"></a>
+										</div>
 									</div>
-									<div class="link_go link" alt="Link image">
-										<a href="#"></a><img src="assets/Link.png" alt="Link image"></a>
+								</div>
+							</div>
+							<div class="cases_item">
+								<img src="assets/Green_cup.jpg" class="cases_image">
+								<div class="image_hover">
+									<div class="links_block">
+										<div class="link_zoom link">
+											<a href="javascript:PopUpShow()"><img src="assets/Zoom.png" alt="Zoom image"></a>
+										</div>
+										<div class="link_go link" alt="Link image">
+											<a href="#"></a><img src="assets/Link.png" alt="Link image"></a>
+										</div>
+									</div>
+								</div>
+							</div>			
+						</div>
+
+						<div class="cases_column">
+							<div class="cases_item upper">
+								<img src="assets/Girl.jpg" class="cases_image">
+								<div class="image_hover">
+									<div class="links_block">
+										<div class="link_zoom link">
+											<a href="javascript:PopUpShow()"><img src="assets/Zoom.png" alt="Zoom image"></a>
+										</div>
+										<div class="link_go link" alt="Link image">
+											<a href="#"></a><img src="assets/Link.png" alt="Link image"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cases_item">
+								<img src="assets/Red_velo.jpg" class="cases_image">
+								<div class="image_hover">
+									<div class="links_block">
+										<div class="link_zoom link">
+											<a href="javascript:PopUpShow()"><img src="assets/Zoom.png" alt="Zoom image"></a>
+										</div>
+										<div class="link_go link" alt="Link image">
+											<a href="#"></a><img src="assets/Link.png" alt="Link image"></a>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="cases_item">
-							<img src="assets/City_velo.jpg" class="cases_image">
-							<div class="image_hover">
-								<div class="links_block">
-									<div class="link_zoom link">
-										<img src="assets/Zoom.png" alt="Zoom image">
+						<div class="cases_column right">
+							<div class="cases_item upper">
+								<img src="assets/Green_cup.jpg" class="cases_image">
+								<div class="image_hover">
+									<div class="links_block">
+										<div class="link_zoom link">
+											<a href="javascript:PopUpShow()"><img src="assets/Zoom.png" alt="Zoom image"></a>
+										</div>
+										<div class="link_go link" alt="Link image">
+											<a href="#"></a><img src="assets/Link.png" alt="Link image"></a>
+										</div>
 									</div>
-									<div class="link_go link" alt="Link image">
-										<a href="#"></a><img src="assets/Link.png" alt="Link image"></a>
+								</div>
+							</div>
+							<div class="cases_item">
+								<img src="assets/City_velo.jpg" class="cases_image">
+								<div class="image_hover">
+									<div class="links_block">
+										<div class="link_zoom link">
+											<a href="javascript:PopUpShow()"><img src="assets/Zoom.png" alt="Zoom image"></a>
+										</div>
+										<div class="link_go link" alt="Link image">
+											<a href="#"><img src="assets/Link.png" alt="Link image"></a>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+				
+					<div class="b-popup" id="popup1">
+						<div class="container">
+    						<div class="b-popup-content">
+        						<div class="full_image_block">
+        							<img src="assets/casepreview.jpg" alt="big cool velo" class="preview_item">
+        						
+        							<a href="javascript:PopUpHide()"><div class="cancel_preview">
+        							</div></a>
+        						
+        						</div>
+    						</div>
+    					</div>
+					</div>	
 		</section>
 		<section class="contacts section">
 			<div class="container">
-				<div class="contact_block">
+				<a name="contact"></a><div class="contact_block">
 					<div class="section_headding heading_content contact_heading"> 
 						<h2> Stay with us </h2>
 						<p> We ensure quailty & support </p>
