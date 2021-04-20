@@ -188,7 +188,9 @@ header {padding: 30px 0px;
 				cursor: pointer;}
 
 
-.preview_item {object-fit: cover;}
+.preview_item {object-fit: cover;
+				width: 100%;
+				height: auto;}
 
 /* Секция контактов */
 
@@ -350,4 +352,37 @@ footer {background: #f6f9f9;
 
 @media screen and (min-width: 280px) and (max-width: 640px) {
 	.cases_item {width: 90%;}
+	.first, .middle, .last {float: none;
+							display: block; 
+							width: 70%;
+							margin:0 auto;
+							margin-top: 30px;}
+
+	.first {margin-top: 20px;}
+	.contact_form {width: 90%;}
+	.intro_content hr {width: 90%;}
+	.intro_content h1 {font-size:75px;}
+
+	.form_button, .check_block {display: block;
+								float: none;
+								margin: 0 auto;
+								text-align: center;}
+	.contact_separation {height: auto;}
+	.news_checkbox {left:25%;}
+	.check_block span {left:35% ;}
+
+	.form_button {margin-top: 40px;}
+	.b-popup{width: 90%;}
+	.footer_info, .footer_icon_block {float: none;
+										display: block;
+										margin: 0 auto;
+										height: auto;
+										text-align: center;}
+	.footer_icon_block
+}
+
+@media screen and (min-width:280px) and (max-width:362px) {
+	.news_checkbox {left:10%;}
+	.check_block span {left:20%;}
+
 }
