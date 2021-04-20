@@ -338,11 +338,16 @@ footer {background: #f6f9f9;
 .section_headding {padding: 0 0 40px 0;}
 
 .right, .central, .left {height: auto; margin: 0 auto;}
- .image_hover {padding: 85px 0;}
-.links_block { width: 80%;
+ .image_hover {padding: 90px 0;}
+.links_block { width: 90%;
  }
 .link {width: 50%;
 		height: 100%;}
-.link_img {width:90px;
-			height: 90px;}
+.link_img {width:75px;
+			height: 75px;}
+}
+
+
+@media screen and (min-width: 280px) and (max-width: 640px) {
+	.cases_item {width: 90%;}
 }
