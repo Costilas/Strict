@@ -341,8 +341,7 @@ footer {background: #f6f9f9;
 
 .right, .central, .left {height: auto; margin: 0 auto;}
  .image_hover {padding: 90px 0;}
-.links_block { width: 90%;
- }
+.links_block { width: 90%;}
 .link {width: 50%;
 		height: 100%;}
 .link_img {width:75px;
